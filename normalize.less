@@ -329,14 +329,6 @@ html input[type="button"],
 
 /* 1 */
 
-input[type="reset"],
-input[type="submit"] {
-    -webkit-appearance: button;
-    /* 2 */
-    cursor: pointer;
-    /* 3 */
-}
-
 
 /**
  * Re-set default cursor for disabled elements.
@@ -367,6 +359,13 @@ input {
  */
 
 input {
+    &[type="reset"],
+    [type="submit"] {
+        -webkit-appearance: button;
+        /* 2 */
+        cursor: pointer;
+        /* 3 */
+    }
     line-height: normal;
     /**
     * It's recommended that you don't attempt to style these elements.
